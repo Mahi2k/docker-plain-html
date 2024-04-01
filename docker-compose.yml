@@ -1,0 +1,11 @@
+version: "3"
+services:
+  ms1:
+    image: plainhtml
+    deploy:
+      replicas: 2
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+    - "80:80"
